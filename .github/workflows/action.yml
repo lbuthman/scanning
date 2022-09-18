@@ -39,7 +39,8 @@ jobs:
         uses: mitchspano/sfdx-scan-pull-request@v0.1.3
         with:
           pmdconfig: tech-debt-ruleset.xml
-          severity-threshold: 5
+# - uncomment the below two (and deleted this comment) once the code base has been sufficiently refactored and cleanedup
+#         severity-threshold: 5
 #         strictly-enforced-rules: '[{ "engine": "pmd", "category": "Performance", "rule": "AvoidDebugStatements" }]'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
